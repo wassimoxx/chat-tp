@@ -10,4 +10,4 @@ RUN a2enmod rewrite
 RUN sed -i 's!/var/www/html!/var/www/html/public!g' /etc/apache2/sites-available/000-default.conf
 
 # Fix storage permissions
-RUN chown -R www-data:www-data /var/www/html/storage
+RUN mkdir -p /var/www/html/storage && chown -R www-data:www-data /var/www/html/storage
