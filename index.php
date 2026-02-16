@@ -1,4 +1,7 @@
 <?php
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
 /**
  * Front Controller - Entry point for all requests
  */
@@ -53,3 +56,4 @@ $router->get('/chat/poll', 'ChatController@poll');
 
 // Dispatch the request
 $router->dispatch();
+
