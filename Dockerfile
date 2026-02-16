@@ -11,3 +11,4 @@ RUN sed -i 's!/var/www/html!/var/www/html/public!g' /etc/apache2/sites-available
 
 # Fix storage permissions
 RUN mkdir -p /var/www/html/storage && chown -R www-data:www-data /var/www/html/storage
+
